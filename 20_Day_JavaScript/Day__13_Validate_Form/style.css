@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+::selection{
+    background: #9999ee;
+}
+:root{
+    --main-color: green;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to top, #ef32d9, #89fffd);
+    display: grid;
+    place-content: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+form{
+    background: #222;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    color: #45f3ff;
+    font-size: 35px;
+    letter-spacing: .2rem;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 15px 10px 10px;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #45f3ff;
+    color: #fff;
+    margin-bottom: 25px;
+    transition: .5s;
+    z-index: 10;
+}
+.inputBox label{
+    position: absolute;
+    left: 0;
+    padding: 15px 10px 10px;
+    pointer-events: none;
+    color: #45f3ff;
+    font-size: 1rem;
+    transform: translate(-10px, -50%);
+    letter-spacing: 0.05rem;
+    transition: .5s ease;
+}
+.error small{
+    position: absolute;
+    color: #ff0000;
+    left: 0;
+    bottom: 0;
+}
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #45f3ff;
+    cursor: pointer;
+}
+.remember-forget label input{
+    accent-color: #ff0000;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.btn{
+    margin: 15px 0 30px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    font-size: 16px;
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: .4px;
+    border-radius: 6px;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow: #45f3ff 0 0 20px;
+}
+.login-sign{
+    color: #8f8f8f;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+.login-sign a{
+    color: #45f3ff;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 3px;
+    font-weight: 350;
+}
+.login-sign a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}

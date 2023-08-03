@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Day With JavaScript - Day 3 - Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../Image/Logo.jpg">
+    <!-- BoxIcon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <!-- Start Quiz -->
+    <div class="start-btn"><button>Start Quiz</button></div>
+    <div class="info-box hide">
+        <div class="info-title">Welcome To Quiz For Me</div>
+        <div class="info-list">
+            <li class="info">1. Bạn có 15 giây để trả lời câu hỏi.</li>
+            <li class="info">2. Có tổng cộng 5 câu hỏi cần trả lời.</li>
+            <li class="info">3. Bạn không thể Exit sau khi nhấn Continue</li>
+            <li class="info">4. Bạn đã sẵn sàng cho thử thách chưa.</li>
+            <li class="info">5. Số điểm sẽ công bố sau khi bạn hoàn thành.</li>
+        </div>
+        <div class="buttons">
+            <button class="exit">Exit Quiz</button>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+
+    <!-- App Quiz -->
+    <div class="app hide">
+        <header>
+            <h1>Quiz App</h1>
+            <div class="timer">
+                <span class="time-text">Time: </span>
+                <span class="time-sec">15</span>
+            </div>
+        </header>
+        
+        <div class="quiz">
+            <h2 class="question">Question here</h2>
+            <div class="answer-btn">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-box hide">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete-text">Chúc mừng bạn đã hoàn thành thử thách của tui !!!</div>
+        <div class="score">Bạn trả lời chính xác <span>5/5</span> câu hỏi..<br>Tuyệt vời !!!</div>
+        <div class="result-btn">
+            <button class="exit">Exit Quiz</button>
+            <button class="continue">Replay</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

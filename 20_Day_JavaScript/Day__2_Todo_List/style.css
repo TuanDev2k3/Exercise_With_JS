@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+::selection{
+    background: #9999ee;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+.todo_app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo_app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo_app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    background: #ebecf0;
+    border: none;
+    outline: none;
+}
+#input-box{
+    flex: 1;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+button{
+    border-radius: 30px;
+    padding: 16px 40px;
+    font-size: 20px;
+    background: #ff643c;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+ul li{
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: url(./img/unchecked.png) center/cover;
+    top: 8px;
+    left: 8px;
+}
+ul li.check{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.check::before{
+    background: url(./img/checked.png) center/cover;
+}
+ul li i{
+    position: absolute;
+    right: 20px;
+    top: 8px;
+}

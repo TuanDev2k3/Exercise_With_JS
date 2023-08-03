@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Day With JavaScript - Day </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../Image/Logo.jpg">
+    <!-- BoxIcon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <audio src="./img/audio.mp3" id="song"></audio>
+    <div class="contain">
+        <header>
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-bars"></i>
+        </header>
+        <div class="avata">
+            <img src="./img/hero.jpg">
+        </div>
+        <h2>Nhac_hay.mp3</h2>
+        <input type="range" id="input_range" value="0">
+        <div class="contros">
+            <div><i class="fas fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fas fa-play" id="playPause"></i></div>
+            <div><i class="fas fa-forward"></i></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

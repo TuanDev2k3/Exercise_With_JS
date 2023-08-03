@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+::selection{
+    background: #9999ee;
+}
+:root{
+    --main-color: green;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(to top, #ef32d9, #89fffd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.calculator{
+    background: #1e1c2a;
+    width: 310px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.screen{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 40px;
+    margin: 10px 0;
+    text-align: right;
+    user-select: none;
+}
+::placeholder{
+    color: #fff;
+}
+.contros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 10px 0;
+}
+.contros button{
+    width: 50px;
+    height: 50px;
+    box-shadow: -1px -1px 10px #ffffff56;
+    border-radius: 5px;
+    background: #1e1c2a;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contros button:active{
+    box-shadow: -1px -1px 5px #ffffff56;
+}
+.contros button.NaN{
+    color: yellow;
+}
+.contros button:last-child{
+    width: 120px;
+    background: yellow;
+    color: #000;
+    font-size: 25px;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+::selection{
+    background: #9999ee;
+}
+:root{
+    --main-color: green;
+}
+body{
+    height: 100vh;
+    background: #9999ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter{
+    background: blue;
+    width: 200px;
+    padding: 20px;
+    margin: 0 20px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 2px 4px 5px #000;
+    box-shadow: 2px 3px 10px #000;
+}
+.counter h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+.counter h2{
+    font-size: 45px;
+}

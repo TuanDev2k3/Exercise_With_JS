@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+:root{
+    --success: green;
+    --warning: orange;
+    --error: red;
+
+    --success-light: rgb(0, 128, 0, 0.4);
+    --warning-light: rgb(255, 165, 0, 0.4);
+    --error-light: rgb(255, 0, 0, 0.4);
+}
+::selection {
+    background: #e74c3c;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    background: #aaa
+}
+.contro button{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: .5s ease;
+}
+.contro button:active{
+    box-shadow: 4px 4px 10px #000;
+    transform: translate(-3px, 3px);
+}
+.success{
+    background: var(--success);
+}
+.warning{
+    background: var(--warning);
+}
+.error{
+    background: var(--error);
+}
+.notifys{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.notify{
+    padding: 25px 20px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 5px;
+    animation: scrollShow 1s linear forwards;
+    margin-bottom: 10px;
+}
+
+.notify.success .countdown{
+    background: var(--success);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%; 
+    animation: countdown 4s linear forwards;
+}
+.notify.success{
+    background: var(--success-light);
+    border-left: 10px solid var(--success);
+}
+.notify.warning .countdown{
+    background: var(--warning);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%; 
+    animation: countdown 4s linear forwards;
+}
+.notify.warning{
+    background: var(--warning-light);
+    border-left: 10px solid var(--warning);
+}
+.notify.error .countdown{
+    background: var(--error);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%; 
+    animation: countdown 4s linear forwards;
+}
+.notify.error{
+    background: var(--error-light);
+    border-left: 10px solid var(--error);
+}
+.notify i{
+    margin: 0 10px;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+@keyframes countdown{
+    to{
+        width: 0%;
+    }
+}
+@keyframes scrollShow{
+    0%{
+        transform: translateX(100%);
+    }
+    30%{
+        transform: translateX(-10%);
+    }
+    60%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+   
+}
+@keyframes scrollHide{
+    25%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(150%);
+    }
+   
+}

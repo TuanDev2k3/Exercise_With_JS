@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Logo_3.jpg">
+    <link rel="stylesheet" href="style.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- g font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500&display=swap"
+        rel="stylesheet">
+    <title>30 Day With Font-End - Day 22 - Sign Up Animation</title>
+</head>
+
+<body>
+    <div class="box">
+        <span class="boxLine"></span>
+        <!-- Login -->
+        <form action="" id="login">
+            <h1>Login</h1>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forget">
+                <label>
+                    <input type="checkbox">
+                    Remember me
+                </label>
+                <a>Forget Password</a>
+            </div>
+            <input type="submit" value="Login" class="btn">
+            <div class="login-sign">
+                I don't have account
+                <a id="sign-up">Sign Up</a>
+            </div>
+        </form>
+
+        <!-- Sign Up -->
+        <form action="" id="sign">
+            <h1>Sign Up</h1>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>User Name</label>
+            </div>
+            <div class="inputBox">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+            <div class="inputBox">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forget">
+                <label>
+                    <input type="checkbox">
+                    I'm not a Robot
+                </label>
+            </div>
+            <input type="submit" value="Sign Up" class="btn">
+            <div class="login-sign">
+                I have an account
+                <a id="login-up">Login Now</a>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Day With Font-End - Day </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./Logo_3.jpg">
+    <!-- BoxIcon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <div class="content">
+        <input type="checkbox" id="check" hidden>
+        <label for="check"></label>
+    </div>
+    <!--======= JS =======-->
+    <script>
+        let body = document.querySelector('body')
+        let btn = document.querySelector('label')
+
+        btn.addEventListener('click', function(){
+            body.classList.toggle('dark')
+        })
+    </script>
+</body>
+</html>

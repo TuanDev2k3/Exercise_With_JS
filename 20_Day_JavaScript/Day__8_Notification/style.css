@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --success-color: green;
+    --error-color: red;
+    --warning-color: orange;
+}
+.success{
+    background: var(--success-color);
+}
+.error{
+    background: var(--error-color);
+}
+.warning{
+    background: var(--warning-color);
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(to top, #ef32d9, #89fffd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.contain button{
+    width: 140px;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    margin: 0 20px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 3px #00000092;
+    cursor: pointer;
+}
+.notifys{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+.notify{
+    width: 320px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #fff;    
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    box-shadow: 3px -3px 5px #000000c1;
+    animation: scrollShow 1s linear forwards;
+}
+.notify h3{
+    font-weight: 600;
+    font-size: 19px;
+}
+.notify span{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    animation: countdown 4s linear forwards .5s;
+}
+.notify.success span{
+    background: var(--success-color);
+}
+.notify.error span{
+    background: var(--error-color);
+}
+.notify.warning span{
+    background: var(--warning-color);
+}
+.notify i{
+    margin: 0 15px;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+@keyframes countdown{
+    to{
+        width: 0%;
+    }
+}
+@keyframes scrollShow{
+    0%{
+        transform: translateX(100%);
+    }
+    30%{
+        transform: translateX(-10%);
+    }
+    60%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+   
+}

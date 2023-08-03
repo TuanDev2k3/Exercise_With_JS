@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Day With JavaScript - Day 10 - Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../Image/Logo.jpg">
+    <!-- BoxIcon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="screen" placeholder="0">
+        <div class="contros">
+            <button class="NaN" onclick="delAC()">AC</button>
+            <button class="NaN" onclick="delDE()">DE</button>
+            <button class="NaN" onclick="show('.')">.</button>
+            <button class="NaN" onclick="show('/')">/</button>
+            <button onclick="show('7')">7</button>
+            <button onclick="show('8')">8</button>
+            <button onclick="show('9')">9</button>
+            <button class="NaN" onclick="show('*')">*</button>
+            <button onclick="show('4')">4</button>
+            <button onclick="show('5')">5</button>
+            <button onclick="show('6')">6</button>
+            <button class="NaN" onclick="show('-')">-</button>
+            <button onclick="show('1')">1</button>
+            <button onclick="show('2')">2</button>
+            <button onclick="show('3')">3</button>
+            <button class="NaN" onclick="show('+')">+</button>
+            <button onclick="show('00')">00</button>
+            <button onclick="show('0')">0</button>
+            <button class="NaN" onclick="calc()">=</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

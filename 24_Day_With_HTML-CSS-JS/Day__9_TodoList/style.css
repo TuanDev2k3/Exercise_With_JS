@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+::selection {
+    background: #e74c3c;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #1488CC, #2B32B2);
+}
+.container{
+    width: 400px;
+    margin: 90px auto;
+    background: #fff;
+    padding-top: 10px;
+    border-radius: 6px;
+}
+form{
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+form input{
+    font-size: 24px;
+    width: 100%;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+}
+form button{
+    background: #2B32B2;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.todos{
+    overflow-y: scroll;
+    max-height: 400px;
+}
+.todos::-webkit-scrollbar{
+    display: none;
+}
+.todos li{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+.todos li span{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;
+    overflow: hidden;
+}
+
+li.completed{
+    color: #aaa;
+}
+li.completed span{
+    text-decoration: line-through;
+}
+.removeAll{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: #2B32B2;
+    margin: 10px 20px;
+    user-select: none;
+    cursor: pointer;
+}
